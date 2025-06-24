@@ -5,6 +5,7 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Settings
+import com.example.binlist.domain.model.BottomNavItem
 
 fun getNavigationItems(): List<BottomNavItem> {
     return listOf(
@@ -15,10 +16,10 @@ fun getNavigationItems(): List<BottomNavItem> {
             route = Routes.Home
         ),
         BottomNavItem(
-            title = "Настройки",
+            title = "История",
             selectedIcon = Icons.Filled.Settings,
             unselectedIcon = Icons.Outlined.Settings,
-            route = Routes.Settings
+            route = Routes.History
         )
     )
 }
