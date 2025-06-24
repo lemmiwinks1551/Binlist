@@ -2,8 +2,10 @@ package com.example.binlist.presentation.ui.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.Settings
 import com.example.binlist.domain.model.BottomNavItem
 
@@ -17,8 +19,8 @@ fun getNavigationItems(): List<BottomNavItem> {
         ),
         BottomNavItem(
             title = "История",
-            selectedIcon = Icons.Filled.Settings,
-            unselectedIcon = Icons.Outlined.Settings,
+            selectedIcon = Icons.Filled.Info,
+            unselectedIcon = Icons.Outlined.Info,
             route = Routes.History
         )
     )

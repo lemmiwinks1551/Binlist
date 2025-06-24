@@ -1,4 +1,4 @@
-package com.example.binlist
+package com.example.binlist.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
