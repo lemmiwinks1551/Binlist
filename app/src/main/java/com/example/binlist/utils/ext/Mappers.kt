@@ -25,13 +25,13 @@ fun BinInfoUiModel.toEntity(bin: String) = BinInfoEntity(
 
 fun BinInfoDto.toUiModel(): BinInfoUiModel {
     return BinInfoUiModel(
-        scheme = scheme ?: "Unknown",
-        type = type ?: "Unknown",
+        scheme = scheme ?: "Неизвестно",
+        type = type ?: "Неизвестно",
         brand = brand,
-        countryName = country?.name ?: "Unknown",
+        countryName = country?.name ?: "Неизвестно",
         latitude = country?.latitude,
         longitude = country?.longitude,
-        bankName = bank?.name ?: "Unknown",
+        bankName = bank?.name ?: "Неизвестно",
         bankPhone = bank?.phone,
         bankUrl = bank?.url,
         bankCity = bank?.city
