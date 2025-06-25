@@ -1,6 +1,7 @@
 package com.example.binlist.di
 
 import com.example.binlist.domain.repository.BinListApi
+import com.example.binlist.domain.useCase.GetBinInfoUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -22,4 +23,9 @@ object NetworkModule {
     @Provides
     fun provideBinListApi(retrofit: Retrofit): BinListApi =
         retrofit.create(BinListApi::class.java)
+
+    @Provides
+    fun provideGetBinInfoUseCase(binListApi: BinListApi): GetBinInfoUseCase {
+        return GetBinInfoUseCase(binListApi)
+    }
 }
